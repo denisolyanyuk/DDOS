@@ -1,0 +1,12 @@
+services:
+  kali:
+    build:
+      context: attacker
+
+
+
+  defender:
+    build:
+      context: defender
+    ports:
+      - "80:80"
